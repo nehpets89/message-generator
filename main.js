@@ -25,7 +25,7 @@ const randomFacts = ['Honey never spoils and has been found in ancient Egyptian 
     "The M's in M&M's stand for Mars and Murrie, the creators of the candy", "There's a town in Norway called Hell, and it freezes over every winter", "The original name for butterfly was 'flutterby'",
     "There's a basketball court inside the U.S. Supreme Court building", "Banging your head against a wall for one hour burns 150 calories", "In Switzerland, it's illegal to flush the toilet after 10 PM in an apartment building",
     "The longest word in the English language is 189,819 letters long and takes three and a half hours to pronounce", "The inventor of the microwave appliance received only $2 for his discovery",
-    "A polar bear's skin is black, and its fur is actually clear", "Most of the dust in your home is made of human skin.", "In Japan, there's a museum dedicated entirely to rocks that look like faces.",
+    "A polar bear's skin is black, and its fur is actually clear", "Most of the dust in your home is made of human skin", "In Japan, there's a museum dedicated entirely to rocks that look like faces",
     "A group of pandas is called an 'embarrassment'", "The tongue of a giraffe is so long that it can lick its own ears", "The first food eaten in space by astronauts was applesauce",
     "An ostrich's eye is bigger than its brain", "The moon has moonquakes, just like the Earth has earthquakes", "The human stomach gets a new lining every three to four days to prevent it from digesting itself",
     "The average person walks the equivalent of three times around the world in a lifetime", "The Great Wall of China is not visible from space without aid.", "The strongest muscle in the body, relative to its size, is the tongue",
@@ -76,3 +76,11 @@ function getRandomTime(arr) {
     return randomTime;
 }
 
+//Calls the functions
+getRandomFact(randomFacts);
+getRandomAdjective(randomAdjectives);
+getRandomTime(randomTimes);
+
+//Prints the output to the console
+console.log(`Your ${randomAdjective} fact of the ${randomTime} is:`);
+console.log(randomFact + '!');
