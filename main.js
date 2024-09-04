@@ -47,10 +47,14 @@ const randomAdjectives = ["Adventurous", "Brave", "Calm", "Dazzling", "Elegant",
 
 const randomTimes = ["second", "minute", "hour", "day", "week", "month", "Three months", "year", "Five years", "decade"];
 
+let randomFact;
+let randomAdjective;
+let randomTime;
+
 // Get the random Fact
 function getRandomFact(arr) {
     let selectionNumber = Math.floor(Math.random() * 100);
-    let randomFact = arr[selectionNumber];
+    randomFact = arr[selectionNumber];
     return randomFact;
 }
 
@@ -59,7 +63,7 @@ const generatedFact = getRandomFact(randomFacts);
 // Get random adjective
 function getRandomAdjective(arr) {
     let selectionNumber = Math.floor(Math.random() * 100);
-    let randomAdjective = arr[selectionNumber];
+    randomAdjective = arr[selectionNumber];
     randomAdjective = randomAdjective.toLowerCase();
     return randomAdjective;
 }
@@ -67,7 +71,7 @@ function getRandomAdjective(arr) {
 //Get random time period
 function getRandomTime(arr) {
     let selectionNumber = Math.floor(Math.random() * 10);
-    let randomTime = arr[selectionNumber];
+    randomTime = arr[selectionNumber];
     randomTime = randomTime.toLowerCase();
     return randomTime;
 }
